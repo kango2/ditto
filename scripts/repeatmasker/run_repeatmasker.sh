@@ -7,8 +7,8 @@ for i in `cat /g/data/xl04/rb9779/ditto/misc/genomepaths.txt`
     odir=/g/data/xl04/rb9779/repeatmasker/output
     tmpdir=/g/data/xl04/rb9779/repeatmasker/tmp
     inputfile=$i
-    bp=/g/data/xl04/rb9779/
-    logdir=/g/data/te53/svanalysis/repeatmasker/logs
+    bp=/g/data/xl04/rb9779
+    logdir=/g/data/xl04/rb9779/repeatmasker/logs
     species="amniota"
 
 #Check if there are done files with EXIT_STATUS:0 for the last step/ removal of tmp directories (indicating that the script has gone to completion)
