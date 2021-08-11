@@ -13,7 +13,7 @@
 
 #Load modules
 set -ex
-source /g/data/xl04/rb9779/executecommand.sh
+source /g/data/xl04/rb9779/ditto/misc/executecommand.sh
 module load /g/data/xl04/rb9779/modules/RepeatMasker/4.1.2-p1 /g/data/xl04/rb9779/modules/utils/0.1
 
 #variables set
