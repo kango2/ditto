@@ -1,0 +1,10 @@
+/g/data/xl04/wholegenomealignments/genomes/BASDU1/bassiana_ont_gap_filled_assembly.fa
+/g/data/xl04/wholegenomealignments/genomes/BASDU3/bassiana_ont_purged_primary_assembly.fa
+/g/data/xl04/wholegenomealignments/genomes/BASDU2/bassiana_ont_polished_primary_assembly.fa
+/g/data/xl04/wholegenomealignments/genomes/BASDU4/bassiana_ont_scaffolded_assembly.fa
+/g/data/xl04/wholegenomealignments/genomes/INTLE/EWD_hifiasm_HiC.fasta
+/g/data/xl04/wholegenomealignments/genomes/SAMER/HLtupMer6_HiC.fasta
+/g/data/xl04/wholegenomealignments/genomes/POVIT1/pogona_ont_gap_filled_assembly.fa
+/g/data/xl04/wholegenomealignments/genomes/POVIT3/pogona_ont_purged_primary_assembly.fa
+/g/data/xl04/wholegenomealignments/genomes/POVIT2/pogona_ont_polished_primary_assembly.fa
+/g/data/xl04/wholegenomealignments/genomes/POVIT4/pogona_ont_scaffolded_assembly.fa
