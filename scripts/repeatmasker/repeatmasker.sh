@@ -70,6 +70,6 @@ qsub \
         -N cat.$sampleID.RM.pbs \
         -P xl04 \
         -q normal \
-        /g/data/xl04/ditto/scripts/repeatmasker/repeatmasker.output.gzip.sh\
+        /g/data/xl04/rb9779/ditto/scripts/repeatmasker/repeatmasker.output.gzip.sh\
         )
 execute_command command[@] $sampleID.repeatmasker.qsub $odir/$sampleID.repeatmasker.qsub.done 0

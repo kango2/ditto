@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##Run RepeatMasker
-for i in `cat /g/data/xl04/rb9779/ditto/misc/genomepaths.txt | head -n1`
+for i in `cat /g/data/xl04/rb9779/ditto/misc/genomepaths.txt`
     do
     sampleID=`basename $i .fa`
     odir=/g/data/xl04/rb9779/repeatmasker/output
@@ -26,6 +26,6 @@ for i in `cat /g/data/xl04/rb9779/ditto/misc/genomepaths.txt | head -n1`
         -v bp=$bp,species=$species,sampleID=$sampleID,odir=$odir,tmpdir=$tmpdir,inputfile=$inputfile,len=$len,basepath=$basepath,logdir=$logdir \
         -N RM.$sampleID.pbs \
         -P xl04 \
-        /g/data/xl04/ditto/scripts/repeatmasker/repeatmasker.sh
+        /g/data/xl04/rb9779/ditto/scripts/repeatmasker/repeatmasker.sh
     fi
 done
