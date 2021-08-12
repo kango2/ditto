@@ -40,7 +40,7 @@ cd $tmpdir/out.tmp.$sampleID/
 rmbin=`which RepeatMasker`
 
 #Launch RepeatMasker and output to $PBS_JOBFS
-$rmbin -pa 1 -species $species -xsmall -poly -gff $tmpdir/out.tmp.$sampleID/$sampleID.fa
+$rmbin -pa 4 -species $species -xsmall -poly -gff $tmpdir/out.tmp.$sampleID/$sampleID.fa
 
 cat $tmpdir/out.tmp.$sampleID/$sampleID*.out > $tmpdir/$sampleID.rm.out
 cat $tmpdir/out.tmp.$sampleID/$sampleID*.gff > $tmpdir/$sampleID.rm.out.gff
