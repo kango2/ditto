@@ -56,13 +56,13 @@ rsync -avP $tmpdir/$sampleID.rm.cat $odir
 rsync -avP $tmpdir/$sampleID.rm.tbl $odir
 rsync -avP $tmpdir/$sampleID.rm.masked $odir
 
-#command=(\
-#qsub \
-#        -o $logdir \
-#        -v sampleID=$sampleID,inputfile=$inputfile,odir=$odir,logdir=$logdir \
-#        -N cat.$sampleID.RM.pbs \
-#        -P xl04 \
-#        -q normal \
-#        /g/data/xl04/rb9779/ditto/scripts/repeatmasker/repeatmasker.output.gzip.sh\
-#        )
-#execute_command command[@] $sampleID.repeatmasker.qsub $odir/$sampleID.repeatmasker.qsub.done 0
+command=(\
+qsub \
+        -o $logdir \
+        -v sampleID=$sampleID,inputfile=$inputfile,odir=$odir,logdir=$logdir \
+        -N cat.$sampleID.RM.pbs \
+        -P xl04 \
+        -q normal \
+        /g/data/xl04/rb9779/ditto/scripts/repeatmasker/repeatmasker.output.gzip.sh\
+        )
+execute_command command[@] $sampleID.repeatmasker.qsub $odir/$sampleID.repeatmasker.qsub.done 0
