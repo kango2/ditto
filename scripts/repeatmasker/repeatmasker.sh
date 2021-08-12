@@ -47,7 +47,7 @@ ls -1 $tmpdir/out.tmp.$sampleID/*_chunk_* > $tmpdir/out.tmp.$sampleID/chunknames
 rmbin=`which RepeatMasker`
 
 #Launch RepeatMasker and output to $PBS_JOBFS
-parallel --compress --tmpdir $tmpdir/out.tmp.$sampleID/ --joblog $odir/$sampleID.parallel.log -j ${PBS_NCPUS} bash $bp/ditto/misc/shift_dir.sh $tmpdir/out.tmp.RM.$sampleID/ $rmbin -pa 1 -species $species -xsmall -poly -gff {} :::: $tmpdir/out.tmp.$sampleID/chunknames.txt
+parallel --compress --tmpdir $tmpdir/out.tmp.$sampleID/ --joblog $odir/$sampleID.parallel.log -j ${PBS_NCPUS} bash $bp/ditto/misc/shift_dir.sh $tmpdir/out.tmp.RM.$sampleID/ $rmbin -pa 4 -species $species -xsmall -poly -gff {} :::: $tmpdir/out.tmp.$sampleID/chunknames.txt
 
 cat $tmpdir/out.tmp.$sampleID/$sampleID.fa_chunk_*.out > $tmpdir/$sampleID.rm.out
 cat $tmpdir/out.tmp.$sampleID/$sampleID.fa_chunk_*.gff > $tmpdir/$sampleID.rm.out.gff
