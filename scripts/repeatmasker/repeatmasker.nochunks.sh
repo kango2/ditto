@@ -34,7 +34,7 @@ then
   cat $inputfile > $tmpdir/out.tmp.$sampleID/$sampleID.fa
 fi  
 
-cd $tmpdir/out.tmp.RM.$sampleID/
+cd $tmpdir/out.tmp.$sampleID/
 
 #Define RepeatMasker path
 rmbin=`which RepeatMasker`
